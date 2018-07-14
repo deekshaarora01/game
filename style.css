@@ -1,0 +1,71 @@
+#d1{
+    position:fixed;
+    background-color:green;
+    margin: 10px;
+    width: 400px;
+    height: 400px;
+}
+
+#d2 {
+    
+    background-color: black;
+    width:40px;
+    height:40px;
+    display: inline-block;
+    margin-left: 100px;
+    animation-name: updown;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+}
+#d3 {
+   
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-left: 100px;
+    animation-name: updown;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+
+}
+#d4 {
+    background-color:darkblue;
+    width: 40px;
+    height: 40px;
+   margin-top: 120px;
+   animation-name: slide;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+   animation-play-state: paused;
+   animation-timing-function: linear;
+}
+#d1:active #d4{
+    animation-play-state: running;
+}
+ @keyframes updown{
+     0%{
+         transform: translateY(0px);
+     }
+     50%{
+         transform: translateY(360px);
+     }
+     100%{
+         transform: translateY(0px);
+     }
+ }
+
+ @keyframes slide{
+     0%{
+         transform:translateX(0px);
+     }
+     50%{
+         transform:translateX(360px); 
+     }
+     100%{
+         transform:translateX(0px);
+     }
+ }
+
